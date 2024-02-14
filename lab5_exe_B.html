@@ -10,7 +10,27 @@
     <script>
         //JavaScript will go here 
         let firstName = "John";
+        let lastName = "Doe";
+        let age = 25;
         
+        let fullName = firstName + " " + lastName;
+        console.log(fullName)
+ 
+        // Calculate birthYear
+        let currentYear = new Date().getFullYear();
+        let birthday = currentYear -age;
+        console.log(birthYear);
+
+        //String manipulation 
+        console.log(fullName.length);
+        console.log(fullName.toUpperCase());
+
+        //template literals
+        console.log('Hello, my anme is ${fullName} and I am ${age} years old. I was born in ${birthYear}.')
+
+        //conditional operator
+        let canVote = age > 18? true:false;
+        console.log('I am eligible to vote: ${canVote}');
     </script>
 </body>
 </html>
