@@ -216,7 +216,7 @@ Description : DOM Elements.
 
 				// Task 3: Hide the section titled 'What is full-stack?'
 				const whatIsFullStack = Array.from(
-					document.qurySelectorAll('h2')
+					document.querySelectorAll('h2')
 				).find((h2) => h2.textContent === 'What is full-stack?');
 				if (whatIsFullStack) {
 					whatIsFullStack.parentElement.style.display = 'none';
@@ -243,8 +243,9 @@ Description : DOM Elements.
 
 				// Task 6: Set the src attribute of the image
 				let img = document.querySelector('img');
+				console.log(img);
 				if (img) {
-					img.setAttribute('src', './images/example.svg');
+					img.setAttribute('src', 'images/example.svg');
 				}
 
 				// Task 7: Add a new item in the navigation menu
